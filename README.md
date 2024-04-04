@@ -2,7 +2,7 @@
 
 An extended result class to pass errors without a need to wrap them in exceptions 
 
-Inspired by Kotlin Result.kt and Philipp Lackner (https://pl-coding.com/)
+Inspired by Kotlin Result.kt and Philipp Lackner (https://pl-coding.com/, https://github.com/philipplackner/CleanErrorHandling)
 
 ## Usage:
 

@@ -68,9 +68,9 @@ class FooErrorUiMapperImpl(
         return when (error) {
             FooError.InvalidId -> Resource(R.string.foo_error_invalid_id)
             FooError.NotFound -> Resource(R.string.foo_error_not_found)
-            is FooError.ServerError -> ResourceWithArgs(R.string.foo_error_server_error, error.code)
+            is FooError.ServerError -> ResourceWithArgs(R.string.foo_error_server, error.code)
             is FooError.UnknownError -> ResourceWithArgs(
-                R.string.foo_error_invalid_id,
+                R.string.foo_error_unknown,
                 error.cause.message ?: "No cause"
             )
         }.let {
